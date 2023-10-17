@@ -1,0 +1,43 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="FunerariaApp.Views.Cremacion">
+    <Grid BackgroundColor="#A8A8A8" Padding="20">
+        <Image Source="background_image.jpg" AbsoluteLayout.LayoutBounds="0,0,1,1" AbsoluteLayout.LayoutFlags="All" VerticalOptions="FillAndExpand" Aspect="AspectFill" IsVisible="true" HeightRequest="650" />
+        <Grid RowSpacing="5" RowDefinitions="Auto,Auto,Auto,Auto" VerticalOptions="FillAndExpand">
+            <Grid Grid.Row="0" >
+                <Label Text="Funeraria"
+               VerticalOptions="Start" 
+               HorizontalOptions="CenterAndExpand"
+               FontFamily="Ballet"
+               FontSize="40"
+               TextColor="#632626"
+               HorizontalTextAlignment="Center"/>
+            </Grid>
+            <Grid   Grid.Row="1" BackgroundColor="#632626">
+                <Label Text="Servicios de Cremación"
+                   VerticalOptions="Start" 
+                   HorizontalOptions="CenterAndExpand"
+                   FontFamily="Ballet"
+                   FontSize="38"
+                   TextColor="#FFF"
+                   HorizontalTextAlignment="Center"
+                   Padding="15,0,15,0"/>
+            </Grid>
+            <Grid Padding="20"  Grid.Row="2" BackgroundColor="#632626">
+                <Image Source="cremacion.png" HeightRequest="250" WidthRequest="290"></Image>
+            </Grid>
+
+            <Grid  Grid.Row="3" BackgroundColor="#632626">
+                <Label Text="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s"
+                    VerticalOptions="Start" 
+                    HorizontalOptions="CenterAndExpand"
+                    FontSize="20"
+                    TextColor="#FFF"
+                    HorizontalTextAlignment="Center"
+                    Padding="30,30,30,30"/>
+            </Grid>
+        </Grid>
+
+    </Grid>
+</ContentPage>

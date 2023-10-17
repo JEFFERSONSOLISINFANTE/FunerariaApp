@@ -1,0 +1,99 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="FunerariaApp.Views.ServiciosPage">
+    <Grid BackgroundColor="#A8A8A8" Padding="20">
+        <Image Source="background_image.png" AbsoluteLayout.LayoutBounds="0,0,1,1" AbsoluteLayout.LayoutFlags="All" VerticalOptions="FillAndExpand" Aspect="AspectFill" IsVisible="true" HeightRequest="650" />
+        <Grid RowSpacing="5" RowDefinitions="Auto,Auto,Auto,Auto" VerticalOptions="FillAndExpand" >
+            <Grid Grid.Row="0">
+                <Label Text="Funeraria"
+                VerticalOptions="Start" 
+                HorizontalOptions="CenterAndExpand"
+                FontFamily="Ballet"
+                FontSize="40"
+                TextColor="#632626"/>
+            </Grid >
+            <Grid Grid.Row="1">
+
+                <StackLayout>
+                    <Grid>
+                        <Image Source="carroza.jpg" AbsoluteLayout.LayoutBounds="0,0,1,1" AbsoluteLayout.LayoutFlags="All" VerticalOptions="FillAndExpand" Aspect="AspectFill" IsVisible="true" HeightRequest="150" />
+                        <Grid Grid.Row="0">
+                            <Label Text="Servicio de carrocería"
+                                    VerticalOptions="Start" 
+                                    HorizontalOptions="CenterAndExpand"
+                                    FontFamily="Ballet"
+                                    FontSize="40"
+                                    TextColor="#FFF"
+                                    />
+                                
+                        </Grid >
+                        <Grid Padding="70,80,70,20" Margin="0,-40,0,0">
+                            <Button Clicked="Carroceria_Clicked" Grid.Row =" 1" Text="Conoce más" BorderColor="White" BorderWidth="1"  Background="Transparent" CornerRadius="100" TextTransform="None" FontSize="20" />
+                        </Grid>
+
+                    </Grid>
+   
+
+                </StackLayout>
+
+                
+
+            </Grid>
+            <Grid Grid.Row="2" Margin="0,50">
+
+                <StackLayout>
+                    <Grid>
+                        <Image Source="cremacion.jpg" AbsoluteLayout.LayoutBounds="0,0,1,1" AbsoluteLayout.LayoutFlags="All" VerticalOptions="FillAndExpand" Aspect="AspectFill" IsVisible="true" HeightRequest="150" />
+                        <Grid Grid.Row="0">
+                            <Label Text="Servicio de cremación"
+                    VerticalOptions="Start" 
+                    HorizontalOptions="CenterAndExpand"
+                    FontFamily="Ballet"
+                    FontSize="40"
+                    TextColor="#FFF"/>
+
+                        </Grid >
+                        <Grid Padding="70,80,70,20" Margin="0,-40,0,0">
+                            <Button Clicked="Cremacion_Clicked" Grid.Row =" 1" Text="Conoce más" BorderColor="White" BorderWidth="1"  Background="Transparent" CornerRadius="100" TextTransform="None" FontSize="20" />
+                        </Grid>
+
+                    </Grid>
+
+
+                </StackLayout>
+
+
+
+            </Grid>
+            <Grid Grid.Row="3">
+                
+                <StackLayout>
+                    <Grid>
+                        <Image Source="ataud.jpg" AbsoluteLayout.LayoutBounds="0,0,1,1" AbsoluteLayout.LayoutFlags="All" VerticalOptions="FillAndExpand" Aspect="AspectFill" IsVisible="true" HeightRequest="150" />
+                        <Grid Grid.Row="0">
+                            <Label Text="Servicio de ataúd"
+                    VerticalOptions="Start" 
+                    HorizontalOptions="CenterAndExpand"
+                    FontFamily="Ballet"
+                    FontSize="40"
+                    TextColor="#FFF"/>
+
+                        </Grid >
+                        <Grid Padding="70,80,70,20" Margin="0,-40,0,0">
+                            <Button Clicked="Ataud_Clicked" Grid.Row =" 1" Text="Conoce más" BorderColor="White" BorderWidth="1"  Background="Transparent" CornerRadius="100" TextTransform="None" FontSize="20" />
+                        </Grid>
+
+                    </Grid>
+
+
+                </StackLayout>
+
+
+
+            </Grid>
+        </Grid>
+
+
+    </Grid>
+</ContentPage>
