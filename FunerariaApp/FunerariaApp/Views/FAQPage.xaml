@@ -2,8 +2,8 @@
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="FunerariaApp.Views.FAQPage">
-    <Grid BackgroundColor="#A8A8A8" Padding="20">
-        <Image Source="background_image.jpg" AbsoluteLayout.LayoutBounds="0,0,1,1" AbsoluteLayout.LayoutFlags="All" VerticalOptions="FillAndExpand" Aspect="AspectFill" IsVisible="true" HeightRequest="650" />
+    <Grid BackgroundColor="#A8A8A8" Padding="0" HorizontalOptions="FillAndExpand">
+        <Image Source="background_image.jpg" AbsoluteLayout.LayoutBounds="0,0,1,1" AbsoluteLayout.LayoutFlags="All"  VerticalOptions="FillAndExpand" Aspect="AspectFill" IsVisible="true" HeightRequest="650" />
         <Grid RowSpacing="5" RowDefinitions="Auto,Auto,Auto,Auto" VerticalOptions="FillAndExpand">
             <Grid   Grid.Row="0">
                 <Label Text="Funeraria"
@@ -24,13 +24,75 @@
        TextColor="#4D4F4C"
        HorizontalTextAlignment="Center"/>
             </Grid>
+                
+            <!-- Primera Pregunta -->
+            <Grid Grid.Row="2" Margin="40" RowSpacing="30" RowDefinitions="Auto,Auto,Auto,Auto" VerticalOptions="FillAndExpand">
+                <Grid BackgroundColor="#EAEAEA" HeightRequest="50"  Grid.Row="0" >
+                    <Label Text="¿Qué sucede con mi familiar fallecido?"
+                        VerticalOptions="Start" 
+                        HorizontalOptions="CenterAndExpand"
+                        FontFamily="Montserrat"
+                        FontSize="19"
+                        TextColor="Black"
+                        HorizontalTextAlignment="Center"/>
 
-            <Grid Grid.Row="2">
-                <Grid BackgroundColor="White" HeightRequest="20">
-                    
                 </Grid>
-                <Grid BackgroundColor="White" HeightRequest="20">
-                    
+                <!-- Segunda Pregunta -->
+                <Grid BackgroundColor="#EAEAEA" HeightRequest="40"  Grid.Row="1" >
+                    <Label Text="¿Dónde nos encuentran?"
+                         VerticalOptions="Start" 
+                         HorizontalOptions="CenterAndExpand"
+                         FontFamily="Montserrat"
+                         FontSize="19"
+                         TextColor="Black"
+                         HorizontalTextAlignment="Center"/> 
+
+                </Grid>
+
+                <!-- Tercera Pregunta -->
+                <Grid BackgroundColor="#EAEAEA" HeightRequest="40"  Grid.Row="2" >
+                    <Label Text="¿Cómo procede el tramite?"
+                        VerticalOptions="Start" 
+                        HorizontalOptions="CenterAndExpand"
+                        FontFamily="Montserrat"
+                        FontSize="19"
+                        TextColor="Black"
+                        HorizontalTextAlignment="Center"/>
+
+                </Grid>
+                <!-- Cuarta Pregunta -->
+                <Grid BackgroundColor="#EAEAEA" HeightRequest="45"  Grid.Row="3" >
+                    <Label Text="¿Cómo encontrar a mi familiar fallecido?"
+                         VerticalOptions="Start" 
+                         HorizontalOptions="CenterAndExpand"
+                         FontFamily="Montserrat"
+                         FontSize="19"
+                         TextColor="Black"
+                         HorizontalTextAlignment="Center"/>     
+
+                </Grid>
+                <!-- Quinta Pregunta -->
+                <Grid BackgroundColor="#EAEAEA" HeightRequest="40"  Grid.Row="4" >
+                    <Label Text="¿Cómo accede a nuestros servicios?"
+                         VerticalOptions="Start" 
+                         HorizontalOptions="CenterAndExpand"
+                         FontFamily="Montserrat"
+                         FontSize="19"
+                         TextColor="Black"
+                         HorizontalTextAlignment="Center"/>     
+
+                </Grid>
+
+                <!-- Sexta Pregunta -->
+                <Grid BackgroundColor="#EAEAEA" HeightRequest="40"  Grid.Row="5" >
+                    <Label Text="¿En que cementerios trabajamos?"
+                         VerticalOptions="Start" 
+                         HorizontalOptions="CenterAndExpand"
+                         FontFamily="Montserrat"
+                         FontSize="19"
+                         TextColor="Black"
+                         HorizontalTextAlignment="Center"/>
+
                 </Grid>
             </Grid>
 
