@@ -14,10 +14,20 @@
                    TextColor="#632626"
                    HorizontalTextAlignment="Center"/>
             </Grid>
-            
-            
 
-            
+            <Grid   Grid.Row="1" Margin="-40">
+                <Label Text="Preguntas Frecuentes"
+       VerticalOptions="Start" 
+       HorizontalOptions="CenterAndExpand"
+       FontFamily="Ballet"
+       FontSize="40"
+       TextColor="#4D4F4C"
+       HorizontalTextAlignment="Center"/>
+            </Grid>
+
+
+
+
         </Grid>
     </Grid>
 </ContentPage>
