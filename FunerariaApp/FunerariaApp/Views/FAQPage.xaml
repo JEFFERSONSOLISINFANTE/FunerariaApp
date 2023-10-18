@@ -35,7 +35,12 @@
                         FontSize="19"
                         TextColor="Black"
                         HorizontalTextAlignment="Center"
-                        FontAttributes="Bold"   />
+                        FontAttributes="Bold"/>
+                    
+
+
+
+
 
                 </Grid>
                 <!-- Segunda Pregunta -->
