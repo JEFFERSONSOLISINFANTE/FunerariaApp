@@ -2,10 +2,13 @@
 <TabbedPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="FunerariaApp.Views.LugarPage">
-    <ContentPage Title="Sobre1" IconImageSource="about.png">
+    <ContentPage Title="Cementerio de Saraja" IconImageSource="about.png">
         <Label Text="About" TextColor="Black"/>
     </ContentPage>
-    <ContentPage Title="Courses" IconImageSource="about.png">
+    <ContentPage Title="Parque del recuerdo" IconImageSource="about.png">
+        <Label Text="Courses" TextColor="Black"/>
+    </ContentPage>
+    <ContentPage Title="Camposanto MAPFRE" IconImageSource="about.png">
         <Label Text="Courses" TextColor="Black"/>
     </ContentPage>
 </TabbedPage>
