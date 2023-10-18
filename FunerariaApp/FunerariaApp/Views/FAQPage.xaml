@@ -15,7 +15,7 @@
                    HorizontalTextAlignment="Center"/>
             </Grid>
 
-            <Grid   Grid.Row="1" Margin="-40">
+            <Grid   Grid.Row="1" Margin="-30">
                 <Label Text="Preguntas Frecuentes"
        VerticalOptions="Start" 
        HorizontalOptions="CenterAndExpand"
@@ -26,72 +26,81 @@
             </Grid>
                 
             <!-- Primera Pregunta -->
-            <Grid Grid.Row="2" Margin="40" RowSpacing="30" RowDefinitions="Auto,Auto,Auto,Auto" VerticalOptions="FillAndExpand">
-                <Grid BackgroundColor="#EAEAEA" HeightRequest="50"  Grid.Row="0" >
+            <Grid Grid.Row="2" Margin="20" RowSpacing="30" RowDefinitions="Auto,Auto,Auto,Auto" VerticalOptions="FillAndExpand">
+                <Grid BackgroundColor="#EAEAEA" HeightRequest="40"  Grid.Row="0" >
                     <Label Text="¿Qué sucede con mi familiar fallecido?"
-                        VerticalOptions="Start" 
-                        HorizontalOptions="CenterAndExpand"
+                        VerticalOptions="Center" 
+                        HorizontalOptions="Center"
                         FontFamily="Montserrat"
                         FontSize="19"
                         TextColor="Black"
-                        HorizontalTextAlignment="Center"/>
+                        HorizontalTextAlignment="Center"
+                        FontAttributes="Bold"   />
 
                 </Grid>
                 <!-- Segunda Pregunta -->
                 <Grid BackgroundColor="#EAEAEA" HeightRequest="40"  Grid.Row="1" >
                     <Label Text="¿Dónde nos encuentran?"
-                         VerticalOptions="Start" 
+                         VerticalOptions="CenterAndExpand" 
                          HorizontalOptions="CenterAndExpand"
                          FontFamily="Montserrat"
                          FontSize="19"
                          TextColor="Black"
-                         HorizontalTextAlignment="Center"/> 
+                         HorizontalTextAlignment="Center"
+                         FontAttributes="Bold"   />
 
                 </Grid>
 
                 <!-- Tercera Pregunta -->
                 <Grid BackgroundColor="#EAEAEA" HeightRequest="40"  Grid.Row="2" >
                     <Label Text="¿Cómo procede el tramite?"
-                        VerticalOptions="Start" 
+                        VerticalOptions="Center" 
                         HorizontalOptions="CenterAndExpand"
                         FontFamily="Montserrat"
                         FontSize="19"
                         TextColor="Black"
-                        HorizontalTextAlignment="Center"/>
+                        HorizontalTextAlignment="Center"
+                        FontAttributes="Bold"   />
+
 
                 </Grid>
                 <!-- Cuarta Pregunta -->
-                <Grid BackgroundColor="#EAEAEA" HeightRequest="45"  Grid.Row="3" >
+                <Grid BackgroundColor="#EAEAEA" HeightRequest="40"  Grid.Row="3" >
                     <Label Text="¿Cómo encontrar a mi familiar fallecido?"
-                         VerticalOptions="Start" 
+                         VerticalOptions="Center" 
                          HorizontalOptions="CenterAndExpand"
                          FontFamily="Montserrat"
                          FontSize="19"
                          TextColor="Black"
-                         HorizontalTextAlignment="Center"/>     
+                         HorizontalTextAlignment="Center"
+                         FontAttributes="Bold"   />
+
 
                 </Grid>
                 <!-- Quinta Pregunta -->
                 <Grid BackgroundColor="#EAEAEA" HeightRequest="40"  Grid.Row="4" >
                     <Label Text="¿Cómo accede a nuestros servicios?"
-                         VerticalOptions="Start" 
+                         VerticalOptions="Center" 
                          HorizontalOptions="CenterAndExpand"
                          FontFamily="Montserrat"
                          FontSize="19"
                          TextColor="Black"
-                         HorizontalTextAlignment="Center"/>     
+                         HorizontalTextAlignment="Center"
+                         FontAttributes="Bold"   />
 
                 </Grid>
 
                 <!-- Sexta Pregunta -->
                 <Grid BackgroundColor="#EAEAEA" HeightRequest="40"  Grid.Row="5" >
                     <Label Text="¿En que cementerios trabajamos?"
-                         VerticalOptions="Start" 
+                         VerticalOptions="Center" 
                          HorizontalOptions="CenterAndExpand"
                          FontFamily="Montserrat"
                          FontSize="19"
                          TextColor="Black"
-                         HorizontalTextAlignment="Center"/>
+                         HorizontalTextAlignment="Center"
+                         FontAttributes="Bold"   />
+
 
                 </Grid>
             </Grid>
