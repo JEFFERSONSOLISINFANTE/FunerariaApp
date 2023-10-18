@@ -9,12 +9,12 @@ using Xamarin.Forms.Xaml;
 
 namespace FunerariaApp.Views
 {
-    [XamlCompilation(XamlCompilationOptions.Compile)]
-    public partial class LugaresPage : TabbedPage
-    {
-        public LugaresPage()
-        {
-            InitializeComponent();
-        }
-    }
+	[XamlCompilation(XamlCompilationOptions.Compile)]
+	public partial class LugarPage : TabbedPage
+	{
+		public LugarPage ()
+		{
+			InitializeComponent ();
+		}
+	}
 }

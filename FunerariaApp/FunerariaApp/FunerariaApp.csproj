@@ -7,6 +7,14 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Compile Remove="Views\LugaresPage.xaml.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Remove="Views\LugaresPage.xaml" />
+  </ItemGroup>
+
+  <ItemGroup>
     <None Remove="Fonts\ArianaVioleta-dz2K.ttf" />
     <None Remove="Fonts\Ballet.ttf" />
     <None Remove="Fonts\CustomFont.ttf" />
@@ -43,7 +51,7 @@
     <EmbeddedResource Update="Views\InicioPage.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
-    <EmbeddedResource Update="Views\LugaresPage.xaml">
+    <EmbeddedResource Update="Views\LugarPage.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
     <EmbeddedResource Update="Views\ServiciosPage.xaml">

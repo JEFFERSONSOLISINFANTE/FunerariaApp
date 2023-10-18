@@ -1,11 +1,11 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <TabbedPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="FunerariaApp.Views.LugaresPage">
-    <ContentPage Title="About" IconImageSource="about.png">
-        <Label Text="Welcome to About Page!"/>
+             x:Class="FunerariaApp.Views.LugarPage">
+    <ContentPage Title="Sobre1" IconImageSource="about.png">
+        <Label Text="About" TextColor="Black"/>
     </ContentPage>
     <ContentPage Title="Courses" IconImageSource="about.png">
-        <Label Text="Welcome to Courses Page!"/>
+        <Label Text="Courses" TextColor="Black"/>
     </ContentPage>
 </TabbedPage>

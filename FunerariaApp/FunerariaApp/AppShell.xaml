@@ -86,7 +86,7 @@
         <ShellContent Route="ServiciosPage" ContentTemplate="{DataTemplate local:ServiciosPage}" />
     </FlyoutItem>
     <FlyoutItem Title="Lugares">
-        <ShellContent Route="LugaresPage" ContentTemplate="{DataTemplate local:LugaresPage}" />
+        <ShellContent Route="LugarPage" ContentTemplate="{DataTemplate local:LugarPage}" />
     </FlyoutItem>
     <FlyoutItem Title="Sobre Nosotros" >
         <ShellContent Route="SobreNosotrosPage" ContentTemplate="{DataTemplate local:SobreNosotrosPage}" />
