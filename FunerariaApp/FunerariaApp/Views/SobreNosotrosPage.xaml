@@ -29,7 +29,7 @@
                HorizontalOptions="CenterAndExpand"
                FontFamily="Montserrat"
                FontSize="20"
-               TextColor="#632626"
+               TextColor="#000"
                HorizontalTextAlignment="Center"
                Padding="15,0,15,0"/>
             </Grid>
@@ -47,7 +47,7 @@
                HorizontalOptions="CenterAndExpand"
                FontFamily="Montserrat"
                FontSize="20"
-               TextColor="#632626"
+               TextColor="#000"
                HorizontalTextAlignment="Center"
                Padding="15,0,15,0"/>
 
@@ -62,7 +62,7 @@
                HorizontalOptions="CenterAndExpand"
                FontFamily="Montserrat"
                FontSize="20"
-               TextColor="#632626"
+               TextColor="#000"
                HorizontalTextAlignment="Center"
                Padding="15,0,15,0"/>
                     </Grid>
