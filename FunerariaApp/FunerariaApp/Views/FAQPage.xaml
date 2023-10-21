@@ -1,10 +1,9 @@
-﻿<?xml version="1.0" encoding="utf-8" ?>
-<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+﻿<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="FunerariaApp.Views.FAQPage">
     <Grid BackgroundColor="#A8A8A8" Padding="0" HorizontalOptions="FillAndExpand">
         <Image Source="background_image.jpg" AbsoluteLayout.LayoutBounds="0,0,1,1" AbsoluteLayout.LayoutFlags="All"  VerticalOptions="FillAndExpand" Aspect="AspectFill" IsVisible="true" HeightRequest="650" />
-        <Grid RowSpacing="5" RowDefinitions="Auto,Auto,Auto,Auto" VerticalOptions="FillAndExpand">
+        <Grid RowSpacing="5" RowDefinitions="Auto,Auto,Auto,Auto,Auto,Auto" VerticalOptions="FillAndExpand">
             <Grid   Grid.Row="0">
                 <Label Text="Funeraria"
                    VerticalOptions="Start" 
@@ -17,101 +16,78 @@
 
             <Grid   Grid.Row="1" Margin="-30">
                 <Label Text="Preguntas Frecuentes"
-       VerticalOptions="Start" 
-       HorizontalOptions="CenterAndExpand"
-       FontFamily="Ballet"
-       FontSize="40"
-       TextColor="#4D4F4C"
-       HorizontalTextAlignment="Center"/>
+                   VerticalOptions="Start" 
+                   HorizontalOptions="CenterAndExpand"
+                   FontFamily="Ballet"
+                   FontSize="40"
+                   TextColor="#4D4F4C"
+                   HorizontalTextAlignment="Center"/>
             </Grid>
+
+            <!-- Botones -->
+            <StackLayout Grid.Row="2" Margin="20" Spacing="35">
+                <Button Text="¿Qué sucede con mi familiar fallecido?"
+                        VerticalOptions="CenterAndExpand"
+                        HorizontalOptions="FillAndExpand"
+                        FontFamily="Montserrat"
+                        FontSize="Medium"
+                        BackgroundColor="#EAEAEA"
+                        TextColor="Black"
+                        FontAttributes="Bold"
+                        Clicked="OpenPopupButton_Clicked" />
+
+                <Button Text="¿Dónde nos encuentran?"
+                        VerticalOptions="CenterAndExpand"
+                        HorizontalOptions="FillAndExpand"
+                        FontFamily="Montserrat"
+                        FontSize="Medium"
+                        BackgroundColor="#EAEAEA"
+                        TextColor="Black"
+                        FontAttributes="Bold"
+                        Clicked="OpenPopupButton2_Clicked" />
+
+                <Button Text="¿Cómo procede el trámite?"
+                        VerticalOptions="CenterAndExpand"
+                        HorizontalOptions="FillAndExpand"
+                        FontFamily="Montserrat"
+                        FontSize="Medium"
+                        BackgroundColor="#EAEAEA"
+                        TextColor="Black"
+                        FontAttributes="Bold"
+                        Clicked="OpenPopupButton3_Clicked" />
+
+                <Button Text="¿Cómo encontrar a mi familiar fallecido?"
+                        VerticalOptions="CenterAndExpand"
+                        HorizontalOptions="FillAndExpand"
+                        FontFamily="Montserrat"
+                        FontSize="Medium"
+                        BackgroundColor="#EAEAEA"
+                        TextColor="Black"
+                        FontAttributes="Bold"
+                        Clicked="OpenPopupButton4_Clicked" />
+
+                <Button Text="¿Cómo accede a nuestros servicios?"
+                        VerticalOptions="CenterAndExpand"
+                        HorizontalOptions="FillAndExpand"
+                        FontFamily="Montserrat"
+                        FontSize="Medium"
+                        BackgroundColor="#EAEAEA"
+                        TextColor="Black"
+                        FontAttributes="Bold"
+                        Clicked="OpenPopupButton5_Clicked" />
+
+                <Button Text="¿En que cementerios trabajamos?"
+                        VerticalOptions="CenterAndExpand"
+                        HorizontalOptions="FillAndExpand"
+                        FontFamily="Montserrat"
+                        FontSize="Medium"
+                        BackgroundColor="#EAEAEA"
+                        TextColor="Black"
+                        FontAttributes="Bold"
+                        Clicked="OpenPopupButton6_Clicked" />
+
                 
-            <!-- Primera Pregunta -->
-            <Grid Grid.Row="2" Margin="20" RowSpacing="30" RowDefinitions="Auto,Auto,Auto,Auto" VerticalOptions="FillAndExpand">
-                <Grid BackgroundColor="#EAEAEA" HeightRequest="40"  Grid.Row="0" >
-                    <Label Text="¿Qué sucede con mi familiar fallecido?"
-                        VerticalOptions="Center" 
-                        HorizontalOptions="Center"
-                        FontFamily="Montserrat"
-                        FontSize="19"
-                        TextColor="Black"
-                        HorizontalTextAlignment="Center"
-                        FontAttributes="Bold"/>
-                    
-
-
-
-
-
-                </Grid>
-                <!-- Segunda Pregunta -->
-                <Grid BackgroundColor="#EAEAEA" HeightRequest="40"  Grid.Row="1" >
-                    <Label Text="¿Dónde nos encuentran?"
-                         VerticalOptions="CenterAndExpand" 
-                         HorizontalOptions="CenterAndExpand"
-                         FontFamily="Montserrat"
-                         FontSize="19"
-                         TextColor="Black"
-                         HorizontalTextAlignment="Center"
-                         FontAttributes="Bold"   />
-
-                </Grid>
-
-                <!-- Tercera Pregunta -->
-                <Grid BackgroundColor="#EAEAEA" HeightRequest="40"  Grid.Row="2" >
-                    <Label Text="¿Cómo procede el tramite?"
-                        VerticalOptions="Center" 
-                        HorizontalOptions="CenterAndExpand"
-                        FontFamily="Montserrat"
-                        FontSize="19"
-                        TextColor="Black"
-                        HorizontalTextAlignment="Center"
-                        FontAttributes="Bold"   />
-
-
-                </Grid>
-                <!-- Cuarta Pregunta -->
-                <Grid BackgroundColor="#EAEAEA" HeightRequest="40"  Grid.Row="3" >
-                    <Label Text="¿Cómo encontrar a mi familiar fallecido?"
-                         VerticalOptions="Center" 
-                         HorizontalOptions="CenterAndExpand"
-                         FontFamily="Montserrat"
-                         FontSize="19"
-                         TextColor="Black"
-                         HorizontalTextAlignment="Center"
-                         FontAttributes="Bold"   />
-
-
-                </Grid>
-                <!-- Quinta Pregunta -->
-                <Grid BackgroundColor="#EAEAEA" HeightRequest="40"  Grid.Row="4" >
-                    <Label Text="¿Cómo accede a nuestros servicios?"
-                         VerticalOptions="Center" 
-                         HorizontalOptions="CenterAndExpand"
-                         FontFamily="Montserrat"
-                         FontSize="19"
-                         TextColor="Black"
-                         HorizontalTextAlignment="Center"
-                         FontAttributes="Bold"   />
-
-                </Grid>
-
-                <!-- Sexta Pregunta -->
-                <Grid BackgroundColor="#EAEAEA" HeightRequest="40"  Grid.Row="5" >
-                    <Label Text="¿En que cementerios trabajamos?"
-                         VerticalOptions="Center" 
-                         HorizontalOptions="CenterAndExpand"
-                         FontFamily="Montserrat"
-                         FontSize="19"
-                         TextColor="Black"
-                         HorizontalTextAlignment="Center"
-                         FontAttributes="Bold"   />
-
-
-                </Grid>
-            </Grid>
-
-
-
+            </StackLayout>
         </Grid>
     </Grid>
 </ContentPage>
