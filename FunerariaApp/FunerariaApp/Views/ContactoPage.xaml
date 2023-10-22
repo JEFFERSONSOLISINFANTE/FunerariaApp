@@ -3,13 +3,69 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="FunerariaApp.Views.ContactoPage">
     <ContentPage.Content>
-        <StackLayout>
-            <Entry Placeholder="Nombres" x:Name="nombres" TextColor="#FFF" Background="#000"/>
-            <Entry Placeholder="Correo" x:Name="Correo" TextColor="#FFF" Background="#000"/>
-            <Entry Placeholder="Teléfono" x:Name="Telefono" TextColor="#FFF" Background="#000"/>
-            <Entry Placeholder="Consulta" x:Name="Consulta" TextColor="#FFF" Background="#000"/>
-            <Button Text="Enviar" x:Name="btnGuardar"
-            Clicked="btnGuardar_Clicked"/>
-        </StackLayout>
+        <Grid BackgroundColor="#A8A8A8" Padding="20">
+            <Image Source="background_image.jpg" AbsoluteLayout.LayoutBounds="0,0,1,1" AbsoluteLayout.LayoutFlags="All" VerticalOptions="FillAndExpand" Aspect="AspectFill" IsVisible="true" HeightRequest="650" />
+            <Grid RowSpacing="5" RowDefinitions="Auto,Auto,Auto,Auto" VerticalOptions="FillAndExpand">
+                <Grid   Grid.Row="0">
+                    <Label Text="Funeraria"
+                           VerticalOptions="Start" 
+                           HorizontalOptions="CenterAndExpand"
+                           FontFamily="Ballet"
+                           FontSize="40"
+                           TextColor="#632626"
+                           HorizontalTextAlignment="Center"/>   
+                </Grid>
+                <Grid   Grid.Row="1">
+                    <Label Text="Contacto"
+                           VerticalOptions="Start" 
+                           HorizontalOptions="CenterAndExpand"
+                           FontFamily="Ballet"
+                           FontSize="40"
+                           TextColor="#4D4F4C"
+                           HorizontalTextAlignment="Center"/>   
+                </Grid>
+                <Grid Grid.Row="2">
+                    <StackLayout>
+                        <Frame BackgroundColor="#EAEAEA"
+                                Padding="10"
+                                CornerRadius="25"
+                                BorderColor="Black">
+                            <Entry Placeholder="Nombres" x:Name="nombres" BackgroundColor="#EAEAEA"
+                            TextColor="#000" PlaceholderColor="Black" />
+                        </Frame>
+                        <Frame BackgroundColor="#EAEAEA"
+                                Padding="10"
+                                CornerRadius="25"
+                                BorderColor="Black">
+                            <Entry Placeholder="Correo" x:Name="Correo" BackgroundColor="#EAEAEA"
+                            TextColor="#000" PlaceholderColor="Black"/>
+                        </Frame>
+                        <Frame BackgroundColor="#EAEAEA"
+        Padding="10"
+        CornerRadius="25"
+        BorderColor="Black">
+                            <Entry Placeholder="Teléfono" x:Name="Telefono" BackgroundColor="#EAEAEA"
+                            TextColor="#000" PlaceholderColor="Black"/>
+                        </Frame>
+                        <Frame BackgroundColor="#EAEAEA"
+        Padding="10"
+        CornerRadius="25"
+        BorderColor="Black">
+                            <Entry Placeholder="Consulta" x:Name="Consulta" BackgroundColor="#EAEAEA"
+                            TextColor="#000" PlaceholderColor="Black"/>
+                        </Frame>
+                        <Button Text="Enviar" x:Name="btnGuardar"
+                                Clicked="btnGuardar_Clicked"
+                                HorizontalOptions="CenterAndExpand" 
+                                VerticalOptions="CenterAndExpand"
+                                BackgroundColor="Black"
+                                CornerRadius="30"
+                                Padding="15"
+                                WidthRequest="150" Margin="0,20,0,0"/>
+                    </StackLayout>
+                    
+                </Grid>
+            </Grid>
+        </Grid>
     </ContentPage.Content>
 </ContentPage>
