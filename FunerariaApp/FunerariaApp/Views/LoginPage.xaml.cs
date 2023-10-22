@@ -16,6 +16,7 @@ namespace FunerariaApp.Views
         {
             InitializeComponent();
             this.BindingContext = new LoginViewModel();
+            BindingContext = new RegistroVistaModelo(Navigation);
         }
     }
 }

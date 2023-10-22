@@ -42,21 +42,23 @@
                            CornerRadius="25"
                            BorderColor="Black">
                         
-                                <Entry x:Name="UsernameEntry" 
+                                <Entry x:Name="txtemail" 
                                    Placeholder="Usuario" 
                                    TextColor="Black"
-                                   PlaceholderColor="Black"/>
+                                   PlaceholderColor="Black"
+                                   Text="{Binding txtemail}"/>
                             </Frame>
 
                             <Frame BackgroundColor="#EAEAEA"
                            Padding="10"
                            CornerRadius="25"
                            BorderColor="Black">
-                                <Entry x:Name="PasswordEntry" 
+                                <Entry x:Name="txtclave" 
                                     Placeholder="Contraseña" 
                                     IsPassword="True"
                                     TextColor="Black"
-                                    PlaceholderColor="Black"/>
+                                    PlaceholderColor="Black"
+                                    Text="{Binding txtclave}"/>
                             </Frame>
 
                             <Button Text="Ingresar " 
@@ -65,7 +67,8 @@
                                     BackgroundColor="Black"
                                     CornerRadius="30"
                                     Padding="15"
-                                    WidthRequest="150"/>        
+                                    WidthRequest="150"
+                                    Command="{Binding LoginCommand}"/>        
                         </StackLayout>
                     </Frame>
                 </StackLayout>
