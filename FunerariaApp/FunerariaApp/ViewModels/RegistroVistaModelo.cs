@@ -49,7 +49,7 @@ namespace FunerariaApp.ViewModels
                 var authuser = await autenticacion.SignInWithEmailAndPasswordAsync(objusuario.EmailField.ToString(), objusuario.PasswordField.ToString());
                 string obternertoken = authuser.FirebaseToken;
 
-                await Shell.Current.GoToAsync("//InicioPage");
+                await Shell.Current.GoToAsync("//Lista");
 
 
 
