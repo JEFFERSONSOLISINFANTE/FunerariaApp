@@ -97,8 +97,8 @@
     <FlyoutItem Title="Contacto" >
         <ShellContent Route="ContactoPage" ContentTemplate="{DataTemplate local:ContactoPage}" />
     </FlyoutItem>
-    <FlyoutItem Title="">
-        <ShellContent Route="ContactoPage" ContentTemplate="{DataTemplate local:ContactoPage}" />
+    <FlyoutItem Title="Login">
+        <ShellContent Route="ContactoPage" ContentTemplate="{DataTemplate local:LoginPage}" />
     </FlyoutItem>
     <FlyoutItem Title="">
         <ShellContent Route="ContactoPage" ContentTemplate="{DataTemplate local:ContactoPage}" />

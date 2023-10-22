@@ -1,14 +1,75 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
-             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-             mc:Ignorable="d"
              x:Class="FunerariaApp.Views.LoginPage"
-             Shell.NavBarIsVisible="False">
-    <ContentPage.Content>
-        <StackLayout Padding="10,0,10,0" VerticalOptions="Center">
-            <Button VerticalOptions="Center" Text="Login" Command="{Binding LoginCommand}"/>
-        </StackLayout>
-    </ContentPage.Content>
+             BackgroundImageSource="background_image.png">
+
+
+    <Grid BackgroundColor="#A8A8A8" Padding="20">
+        <Image Source="background_image.jpg" AbsoluteLayout.LayoutBounds="0,0,1,1" AbsoluteLayout.LayoutFlags="All" VerticalOptions="FillAndExpand" Aspect="AspectFill" IsVisible="true" HeightRequest="650" />
+        <Grid RowSpacing="5" RowDefinitions="Auto,Auto,Auto,Auto" VerticalOptions="FillAndExpand">
+            <Grid   Grid.Row="0">
+                <Label Text="Funeraria"
+                       VerticalOptions="Start" 
+                       HorizontalOptions="CenterAndExpand"
+                       FontFamily="Ballet"
+                       FontSize="40"
+                       TextColor="#632626"
+                       HorizontalTextAlignment="Center"/>
+            </Grid>
+
+            <Grid Padding="-19"  Grid.Row="1">
+                <Image Source="logo.png" HeightRequest="290" WidthRequest="290"></Image>
+            </Grid>
+
+            <Grid Padding ="30" Grid.Row="2">
+                <StackLayout VerticalOptions="CenterAndExpand" HorizontalOptions="CenterAndExpand">
+                    <Frame BackgroundColor="#BDB9B9"
+                            WidthRequest="900" 
+                            HeightRequest="1950"
+                            CornerRadius="20">
+
+                        <StackLayout>
+                            
+                            <Label Text="Iniciar Sesion"
+                                   VerticalOptions="Start"
+                                   HorizontalOptions="CenterAndExpand"
+                                   FontSize="25"
+                                   TextColor="Brown"/>
+
+                            <Frame BackgroundColor="#EAEAEA"
+                           Padding="10"
+                           CornerRadius="25"
+                           BorderColor="Black">
+                        
+                                <Entry x:Name="UsernameEntry" 
+                                   Placeholder="Usuario" 
+                                   TextColor="Black"
+                                   PlaceholderColor="Black"/>
+                            </Frame>
+
+                            <Frame BackgroundColor="#EAEAEA"
+                           Padding="10"
+                           CornerRadius="25"
+                           BorderColor="Black">
+                                <Entry x:Name="PasswordEntry" 
+                                    Placeholder="Contraseña" 
+                                    IsPassword="True"
+                                    TextColor="Black"
+                                    PlaceholderColor="Black"/>
+                            </Frame>
+
+                            <Button Text="Ingresar " 
+                                    HorizontalOptions="CenterAndExpand" 
+                                    VerticalOptions="CenterAndExpand"
+                                    BackgroundColor="Black"
+                                    CornerRadius="30"
+                                    Padding="15"
+                                    WidthRequest="150"/>        
+                        </StackLayout>
+                    </Frame>
+                </StackLayout>
+            </Grid>
+        </Grid>
+    </Grid>
 </ContentPage>
