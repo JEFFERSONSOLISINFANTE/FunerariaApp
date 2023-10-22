@@ -7,6 +7,6 @@ namespace FunerariaApp.Services
 {
     public class Conexionfirebase
     {
-        public static FirebaseClient firebase = new FirebaseClient("https://formulariofuneraria-3eac8-default-rtdb.firebaseio.com/");
+        public static FirebaseClient firebase = new FirebaseClient("https://funerariaapp-b57ed-default-rtdb.firebaseio.com/");
     }
 }
