@@ -36,6 +36,11 @@ namespace FunerariaApp.Views
 
             await metodo.InsertarUsuario(mUsuarios);
             await DisplayAlert("alert", "Usuario guardado con exito", "OK");
+            nombres.Text = "";
+            Correo.Text = "";
+            Telefono.Text = "";
+            Consulta.Text = "";
+
         }
     }
 }
