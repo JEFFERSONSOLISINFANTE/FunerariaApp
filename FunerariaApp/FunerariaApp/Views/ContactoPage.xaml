@@ -4,9 +4,12 @@
              x:Class="FunerariaApp.Views.ContactoPage">
     <ContentPage.Content>
         <StackLayout>
-            <Label Text="Welcome to Xamarin.Forms!"
-                VerticalOptions="CenterAndExpand" 
-                HorizontalOptions="CenterAndExpand" />
+            <Entry Placeholder="Nombres" x:Name="nombres" TextColor="#FFF" Background="#000"/>
+            <Entry Placeholder="Correo" x:Name="Correo" TextColor="#FFF" Background="#000"/>
+            <Entry Placeholder="Teléfono" x:Name="Telefono" TextColor="#FFF" Background="#000"/>
+            <Entry Placeholder="Consulta" x:Name="Consulta" TextColor="#FFF" Background="#000"/>
+            <Button Text="Enviar" x:Name="btnGuardar"
+            Clicked="btnGuardar_Clicked"/>
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>

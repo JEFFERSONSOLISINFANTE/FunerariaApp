@@ -7,7 +7,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FunerariaApp.Android", "Fun
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FunerariaApp.iOS", "FunerariaApp\FunerariaApp.iOS\FunerariaApp.iOS.csproj", "{3FD062F5-BCE0-4ADC-BEDF-71C46F51322C}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FunerariaApp", "FunerariaApp\FunerariaApp\FunerariaApp.csproj", "{6CFC0792-9304-4B5E-BDEB-B1ABD35AFD8C}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FunerariaApp", "FunerariaApp\FunerariaApp\FunerariaApp.csproj", "{6CFC0792-9304-4B5E-BDEB-B1ABD35AFD8C}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

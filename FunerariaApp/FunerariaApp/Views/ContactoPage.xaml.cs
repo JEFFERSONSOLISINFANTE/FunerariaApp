@@ -1,4 +1,6 @@
-﻿using System;
+﻿using FunerariaApp.Models;
+using FunerariaApp.ViewModels;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -15,6 +17,25 @@ namespace FunerariaApp.Views
         public ContactoPage()
         {
             InitializeComponent();
+        }
+
+        private void btnGuardar_Clicked(object sender, EventArgs e)
+        {
+            guardarContacto();
+        }
+
+        private async Task guardarContacto()
+        {
+            MUsuarios mUsuarios = new MUsuarios();
+            MVUsuario metodo = new MVUsuario();
+
+            mUsuarios.Nombres = nombres.Text;
+            mUsuarios.Correo = Correo.Text;
+            mUsuarios.Telefono = Telefono.Text;
+            mUsuarios.Consulta = Consulta.Text;
+
+            await metodo.InsertarUsuario(mUsuarios);
+            await DisplayAlert("alert", "Usuario guardado con exito", "OK");
         }
     }
 }
