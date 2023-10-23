@@ -23,6 +23,7 @@
                 <Setter Property="Shell.TabBarForegroundColor" Value="#6D6767"/>
                 <Setter Property="Shell.TabBarUnselectedColor" Value="#545454"/>
                 <Setter Property="Shell.TabBarTitleColor" Value="#545454"/>
+                
             </Style>
             <Style TargetType="TabBar" BasedOn="{StaticResource BaseStyle}" />
             <Style TargetType="FlyoutItem" BasedOn="{StaticResource BaseStyle}" />
@@ -130,6 +131,7 @@
 
 
 
+
     <!-- When the Flyout is visible this will be a menu item you can tie a click behavior to  -->
     <MenuItem Text="Logout" StyleClass="MenuItemLayoutStyle" Clicked="OnMenuItemClicked">
     </MenuItem>
@@ -145,6 +147,7 @@
         <ShellContent Route="LoginPage" ContentTemplate="{DataTemplate local:LoginPage}" />
     </TabBar>
 
+    
     <!-- Optional Templates 
     // These may be provided inline as below or as separate classes.
 
