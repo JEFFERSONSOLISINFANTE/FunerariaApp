@@ -100,20 +100,20 @@
     <FlyoutItem Title="Login">
         <ShellContent Route="LoginPage" ContentTemplate="{DataTemplate local:LoginPage}" />
     </FlyoutItem>
-    <FlyoutItem Title="Lista">
+    <FlyoutItem Title="">
+        <ShellContent Route="ContactoPage" ContentTemplate="{DataTemplate local:ContactoPage}" />
+    </FlyoutItem>
+    <FlyoutItem Title="">
+        <ShellContent Route="ContactoPage" ContentTemplate="{DataTemplate local:ContactoPage}" />
+    </FlyoutItem>
+    <FlyoutItem Title="">
+        <ShellContent Route="ContactoPage" ContentTemplate="{DataTemplate local:ContactoPage}" />
+    </FlyoutItem>
+    <FlyoutItem Title="">
+        <ShellContent Route="ContactoPage" ContentTemplate="{DataTemplate local:ContactoPage}" />
+    </FlyoutItem>
+    <FlyoutItem Title="">
         <ShellContent Route="Lista" ContentTemplate="{DataTemplate local:Lista}" />
-    </FlyoutItem>
-    <FlyoutItem Title="">
-        <ShellContent Route="ContactoPage" ContentTemplate="{DataTemplate local:ContactoPage}" />
-    </FlyoutItem>
-    <FlyoutItem Title="">
-        <ShellContent Route="ContactoPage" ContentTemplate="{DataTemplate local:ContactoPage}" />
-    </FlyoutItem>
-    <FlyoutItem Title="">
-        <ShellContent Route="ContactoPage" ContentTemplate="{DataTemplate local:ContactoPage}" />
-    </FlyoutItem>
-    <FlyoutItem Title="">
-        <ShellContent Route="ContactoPage" ContentTemplate="{DataTemplate local:ContactoPage}" />
     </FlyoutItem>
     <FlyoutItem Title="">
         <ShellContent Route="ContactoPage" ContentTemplate="{DataTemplate local:ContactoPage}" />
